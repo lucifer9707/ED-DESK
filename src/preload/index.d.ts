@@ -1,8 +1,8 @@
 export interface IElectronAPI {
+  getLocalIP: () => Promise<string>
   demo: {
     ping: () => Promise<string>
   }
-  getLocalIP: () => Promise<string>
 }
 
 declare global {
